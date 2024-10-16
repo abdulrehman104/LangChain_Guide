@@ -9,6 +9,8 @@ load_dotenv()
 model: ChatGoogleGenerativeAI = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash")
 
+
+
 # -------------------------- Simple Prompt Template With ChatModel Response -----------------------------------------------
 
 template: str = "Hey you are a helpful {topic} Assistant, What is {contant}? and tell me the benefits of {contant}?"
@@ -20,6 +22,8 @@ prompt = prompt_template.invoke({"topic": "AI", "contant": "Gen AI"})
 response = model.invoke(prompt)
 print(response.content)
 
+
+
 # -------------------------- Multiple Placeholders Prompt Template With ChatModel Response -----------------------------------------------
 
 template: str = "You are a helpful {topic} Assistant. I want to learn {course}, Create a roadmap for this {course} I have only {time} months & in this time, I cover this course."
@@ -30,6 +34,8 @@ prompt_template: ChatPromptTemplate = ChatPromptTemplate.from_template(
 prompt = prompt_template.invoke({"topic": "AI", "course": "Gen AI", "time": 6})
 response = model.invoke(prompt)
 print(response.content)
+
+
 
 # -------------------------- Prompt with System and Human Messages (Using Tuples) -----------------------------------------------
 

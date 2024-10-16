@@ -1,8 +1,9 @@
-# Prompt Template Docs:
-#   https://python.langchain.com/v0.2/docs/concepts/#prompt-templateshttps://python.langchain.com/v0.2/docs/concepts/#prompt-templates
+# Prompt Template Docs: https://python.langchain.com/v0.2/docs/concepts/#prompt-templateshttps://python.langchain.com/v0.2/docs/concepts/#prompt-templates
 
 from langchain.prompts import ChatPromptTemplate, PromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage
+
+
 
 # -------------------------- Simple Prompt Template -----------------------------------------------
 
@@ -21,6 +22,8 @@ prompt_template: PromptTemplate = PromptTemplate(
 prompt = prompt_template.format(topic="Gen AI")
 print(prompt)
 
+
+
 # -------------------------- Multiple Placeholders Prompt Template -----------------------------------------------
 
 # PART 1 (A): Create a Template using ChatPromptTemplate Class.
@@ -38,6 +41,8 @@ prompt_template: PromptTemplate = PromptTemplate(
 )
 prompt = prompt_template.format(topic="AI", course="Gen AI", time="6")
 print(prompt)
+
+
 
 # -------------------------- Prompt with System and Human Messages (Using Tuples) -----------------------------------------------
 

@@ -34,3 +34,7 @@
 ## **7. RAG (Retrieval-Augmented Generation):**
 
 ## **8. Agents & Tools:**
+
+## **9. LangChain Projects:**
+
+[LangChain API Rederences](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.RunnableSequence.html)

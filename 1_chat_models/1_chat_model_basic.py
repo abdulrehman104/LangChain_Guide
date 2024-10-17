@@ -8,14 +8,14 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 # Initialize an instance of the ChatGoogleGenerativeAI with specific parameters
-model: ChatGoogleGenerativeAI = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash", temperature=0.2)
+model: ChatGoogleGenerativeAI = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
 
 
 # Invoke the model with a message
-result = model.invoke(
-    "Hey I want to learn problem-solving skills how can I learn it. ")
+result = model.invoke( "Hey I want to learn problem-solving skills how can I learn it. ")
+
 print("Full result:")
 print(result)
+
 print("Content only:")
 print(result.content)

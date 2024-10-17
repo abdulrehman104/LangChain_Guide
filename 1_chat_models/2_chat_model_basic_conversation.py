@@ -6,8 +6,7 @@ from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 load_dotenv()
 
 # Initialize an instance of the ChatGoogleGenerativeAI with specific parameters
-model: ChatGoogleGenerativeAI = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash", temperature=0.2)
+model: ChatGoogleGenerativeAI = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
 
 # SystemMessage: Message for priming AI behavior, usually passed in as the first of a sequenc of input messages.
 # HumanMessagse: Message from a human to the AI model.
